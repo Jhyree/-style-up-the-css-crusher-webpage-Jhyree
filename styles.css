@@ -1,38 +1,80 @@
-.body-class {
-    background-color: #f0f0f0; /* Subtle background color */
+/* Global Styles */
+body {
+  background-color: #f5f5f5; /* Subtle background color */
+  font-family: Arial, sans-serif; /* Choose clear fonts */
+  font-size: 16px; /* Adequate text size */
+  color: #333; /* Default font color */
 }
 
+/* Header */
 .header-class {
-    background-color: #333; /* Contrasting background color */
-    color: #fff; /* White font color for better visibility */
+  background-color: #333; /* Contrasting background color */
+  color: #fff; /* Font color for better visibility */
 }
 
+/* Navigation */
 .nav-class {
-    background-color: #444; /* Different background color */
-    color: #fff; /* Font color */
+  background-color: #444; /* Different background color */
+  color: #fff; /* Font color */
 }
-
 .nav-class a.active {
-    font-weight: bold; /* Active page link bold */
+  font-weight: bold; /* Bold active page link */
 }
 
-.title-class, .section-title-class {
-    color: #007bff; /* Distinct colors for headings */
+/* Titles */
+.title-class {
+  color: #007bff; /* Distinct color for titles */
+}
+.section-title-class {
+  color: #dc3545; /* Distinct color for section titles */
 }
 
+/* Text */
 .text-class {
-    color: #555; /* Font color contrasting well with background */
+  color: #666; /* Font color contrasting well with background */
 }
 
+/* Images */
 .image-class {
-    border: 1px solid #ccc; /* Border color complementing design */
+  border: 1px solid #ccc; /* Border color complementing design */
+  max-width: 100%; /* Ensure images are scalable */
+  height: auto;
 }
 
-.form-class, .button-class {
-    /* Style form fields and submit buttons with cohesive colors */
+/* Forms and Buttons */
+.form-class input[type="text"],
+.form-class input[type="email"],
+.form-class textarea {
+  background-color: #fff; /* Form field background color */
+  border: 1px solid #ccc; /* Form field border */
+  padding: 5px; /* Adjust padding */
 }
 
+.button-class {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button font color */
+  border: none;
+  padding: 10px 20px; /* Adjust padding */
+  cursor: pointer;
+}
+
+/* Footer */
 .footer-class {
-    background-color: #666; /* Distinct footer background */
-    color: #fff; /* Footer font color */
+  background-color: #666; /* Distinct footer background */
+  color: #fff; /* Footer font color */
+  padding: 20px; /* Adjust padding */
+}
+
+/* Accessibility */
+/* Ensure sufficient color contrast */
+a, button, input, textarea {
+  outline: none;
+}
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Add responsive styles here */
 }
